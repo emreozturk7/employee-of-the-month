@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     theme: 'light',
-    voteList: {},
+    votes: {},
     users: {},
     error: null,
     isLoaded: false,
@@ -12,8 +12,11 @@ const site = createSlice({
     name: 'site',
     initialState,
     reducers: {
-        setVote: (state, action) => {
-            state.vote = action.payload
+        addVote: (state, action) => {
+
+        },
+        setVotes: (state, action) => {
+            state.votes = action.payload
         },
         setTheme: (state, action) => {
             state.theme = action.payload
@@ -26,9 +29,14 @@ const site = createSlice({
         },
         setIsLoaded: (state, action) => {
             state.isLoaded = action.payload
+        },
+        setVote: (state, action) => {
+            state.votes.map((vote) => (
+                vote.userID === action.payload && (vote.vote += 1)
+            ));
         }
     }
 });
 
-export const { setVote, setTheme, setUsers, setError, setIsLoaded } = site.actions;
+export const { setVotes, setTheme, setUsers, setError, setIsLoaded, setVote } = site.actions;
 export default site.reducer;

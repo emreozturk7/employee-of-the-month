@@ -1,7 +1,13 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setVote } from "../stores/site";
 
 function Home() {
-    const { users, error, isLoaded } = useSelector(state => state.site);
+    const { users, error, isLoaded, votes } = useSelector(state => state.site);
+    const dispatch = useDispatch(state => state.site);
+
+    const giveVote = (userID) => {
+        dispatch(setVote(userID));
+    }
 
     return (
         <div>
@@ -12,9 +18,9 @@ function Home() {
                         ? <div>Loading...</div>
                         : <ul>
                             {
-                                users.users.map(user => (
+                                users.users.map((user, index) => (
                                     <li key={user.id}>
-                                        {user.firstName}
+                                        {user.firstName} {votes[index].vote}  <button onClick={() => giveVote(user.id, index)}>Ekle</button>
                                     </li>
                                 ))
                             }
