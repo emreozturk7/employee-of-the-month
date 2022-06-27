@@ -30,5 +30,5 @@ const site = createSlice({
     }
 });
 
-export const { setVote, setTheme } = site.actions;
+export const { setVote, setTheme, setUsers, setError, setIsLoaded } = site.actions;
 export default site.reducer;

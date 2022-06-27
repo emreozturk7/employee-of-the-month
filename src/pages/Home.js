@@ -1,9 +1,26 @@
-import React from 'react';
+import { useSelector } from "react-redux";
 
 function Home() {
-  return (
-    <div>Home</div>
-  )
-}
+    const { users, error, isLoaded } = useSelector(state => state.site);
 
+    return (
+        <div>
+            {
+                error
+                    ? <div>Error: {error.message}</div>
+                    : !isLoaded
+                        ? <div>Loading...</div>
+                        : <ul>
+                            {
+                                users.users.map(user => (
+                                    <li key={user.id}>
+                                        {user.firstName}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+            }
+        </div>
+    );
+}
 export default Home;

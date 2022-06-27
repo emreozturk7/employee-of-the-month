@@ -1,15 +1,12 @@
-import { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import Home from "./pages/Home";
+import GetAllUsers from "./services/userService";
 
 function App() {
-  const { theme, users } = useSelector(state => state.site);
-
-  console.log(users);
-  console.log(theme);
-
   return (
-    <div>
-    </div>
+    <>
+      <GetAllUsers />
+      <Home />
+    </>
   );
 }
 export default App;
