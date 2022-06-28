@@ -1,1 +1,1 @@
-{"version":3,"sources":["UserCard.scss","UserCard.css"],"names":[],"mappings":"AAEA;EACI,kCAHW;ACEf","file":"UserCard.css"}
+{"version":3,"sources":["UserCard.sass","UserCard.css"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,UAAA;EACA,WAAA;EACA,kCAVW;ACSf;;ADGA;EACI,aAAA;EACA,mBAAA;ACAJ;;ADEA;EACI,aAAA;EACA,mBAAA;EACA,kBAAA;EACA,uBAAA;ACCJ;ADAI;EACI,UAAA;EACA,WAAA;ACER;;ADAA;EACI,aAAA;EACA,sBAAA;ACGJ;;ADDA;EACI,6BAAA;ACIJ;;ADFA;EACI,aAAA;EACA,sBAAA;ACKJ","file":"UserCard.css"}

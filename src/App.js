@@ -1,15 +1,17 @@
+import Home from "./pages/Home";
 import { useEffect } from "react";
-import UserCard from "./components/UserCard/UserCard";
-import GetAllUsers from "./services/userService";
+import getAllUsers from "./services/userService";
+import "./App.css";
 
 function App() {
   useEffect(() => {
-    GetAllUsers();
-  }, []);
+    getAllUsers();
+  }, [])
+
 
   return (
     <>
-      <UserCard />
+      <Home />
     </>
   );
 }

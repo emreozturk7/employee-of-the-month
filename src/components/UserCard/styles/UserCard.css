@@ -1,3 +1,40 @@
-div {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 60%;
+  height: 15%;
   background-color: rgb(97, 193, 92);
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo-container {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+.photo-container img {
+  width: 50%;
+  height: 50%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+hr.solid {
+  border-top: 250px solid white;
+}
+
+.vote-container {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=UserCard.css.map */

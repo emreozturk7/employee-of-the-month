@@ -1,0 +1,78 @@
+$primaryColor: rgb(97 193 92)
+$backgroundColor: rgb(240,242,246,255)
+$cardColor: rgb(254,254, 255, 255)
+
+.main-container
+    display: flex
+    justify-content: center
+
+.container
+    height: 5%
+    width: 45%
+    position: relative
+    background-color: $cardColor
+    overflow: hidden
+    box-shadow: 0 0 5px $backgroundColor
+    border-radius: 10px
+    margin-top: 2rem
+    text-align: center
+    padding: 1rem
+
+    &:hover
+        box-shadow: 0 0 30px $backgroundColor
+
+.row-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.image-style
+    margin: 1rem
+    height: 5rem
+    width: 5rem
+    box-shadow: 0 0 0 10px $backgroundColor
+    border-radius: 50%
+
+.info-container
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    .title
+        color: $primaryColor
+        font-family: 'Fira Sans' sans-serif
+        font-size: 24px
+    .subtitle
+        color: gray
+        font-family: 'Fira Sans' sans-serif
+        font-size: 16px
+
+.button-container
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+.btn-style
+    background-color: $primaryColor
+    border-radius: 5px
+    color: #FFFFFF
+    width: 200px
+    cursor: pointer
+    line-height: 30px
+    outline: 0
+    overflow: hidden
+    pointer-events: auto
+    text-align: center
+    user-select: none
+    -webkit-user-select: none
+    vertical-align: top
+    white-space: nowrap
+    border: 0
+    &:hover
+        box-shadow: 0 0 10px $backgroundColor
+
+.vote-container
+    display: flex
+    .vote
+        color: gray
+        font-family: 'Fira Sans' sans-serif
+        font-size: 100px
