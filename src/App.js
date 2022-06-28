@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Home from "./pages/Home";
+import UserCard from "./components/UserCard/UserCard";
 import GetAllUsers from "./services/userService";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <Home />
+      <UserCard />
     </>
   );
 }
