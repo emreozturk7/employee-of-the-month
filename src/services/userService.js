@@ -1,35 +1,25 @@
-import { useDispatch } from "react-redux";
-import { useEffect } from "react";
-import { setUsers, setIsLoaded, setError, setVotes } from "../stores/site";
+import { setUsers, setIsLoaded, setError, setVotes } from "../stores/userSlice";
+import store from "../stores/index";
 
-function GetAllUsers() {
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        fetch("https://dummyjson.com/users")
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    dispatch(setUsers(result));
-                    dispatch(setIsLoaded(true));
-                    dispatch(setVotes(result.users.map((e) => (
-                        {
-                            "userID": e.id,
-                            "vote": 0,
-                        }
-                    ))))
-                },
-                (error) => {
-                    dispatch(setIsLoaded(true));
-                    dispatch(setError(error));
-                }
-            );
-    }, []);
-
-    return (
-        <>
-        </>
-    );
+const getAllUsers = () => {
+    fetch("https://dummyjson.com/users")
+        .then(res => res.json())
+        .then(
+            (result) => {
+                store.dispatch(setUsers(result));
+                store.dispatch(setIsLoaded(true));
+                store.dispatch(setVotes(result.users.map((user) => (
+                    {
+                        "userID": user.id,
+                        "vote": 0,
+                    }
+                ))))
+            },
+            (error) => {
+                store.dispatch(setIsLoaded(true));
+                store.dispatch(setError(error));
+            }
+        );
 }
 
-export default GetAllUsers;
+export default getAllUsers;
