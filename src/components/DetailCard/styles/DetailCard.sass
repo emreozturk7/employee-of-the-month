@@ -6,6 +6,8 @@ $dark-gray-blue: hsl(227, 10%, 46%)
 $dark-gray: hsl(0, 0%, 59%)
 $font-size: 18px
 $font-family: 'Kumbh Sans', sans-serif
+$primaryColor: rgb(97 193 92)
+$backgroundColor: rgb(240,242,246,255)
 
 .flex-row
     display: flex
@@ -14,12 +16,6 @@ $font-family: 'Kumbh Sans', sans-serif
 .flex-column
     display: flex
     flex-direction: column
-    justify-content: space-between
-
-*,
-*::before,
-*::after
-    box-sizing: border-box
 
 .detail-container
     display: flex
@@ -35,11 +31,11 @@ $font-family: 'Kumbh Sans', sans-serif
 .card-container
     width: 75%
     height: 100%
-    justify-content: center
+    justify-content: space-between
     align-items: center
     background-color: white
     border-radius: 15px
-    box-shadow: 0px 5px 30px -1px rgba(0, 0, 0, 0.4)
+    box-shadow: 0px 5px 20px -1px rgba(0, 0, 0, 0.4)
 
     .card-pattern
         border-radius: 15px 15px 0 0
@@ -49,8 +45,8 @@ $font-family: 'Kumbh Sans', sans-serif
 
 .user-info
     .user-photo
+        bottom: 120px
         position: relative
-        bottom: 40px
         width: 100%
         height: 100%
         align-self: center
@@ -58,21 +54,21 @@ $font-family: 'Kumbh Sans', sans-serif
         border-radius: 50%
         transition: border 0.3s ease-out
         cursor: pointer
-
-        &:hover
-            border: 5px solid $dark-cyan
+        background-color: $backgroundColor
 
     .name-age
         position: relative
-        bottom: 20px
-        justify-content: space-between
+        justify-content: center
         align-items: center
-        width: 135px
+        bottom: 20%
 
         .name
+            font-size: 36px
+            margin-right: 5%
             font-weight: 700
 
         .age
+            font-size: 24px
             color: $dark-gray-blue
 
     .location
@@ -80,22 +76,29 @@ $font-family: 'Kumbh Sans', sans-serif
         bottom: 15px
         align-self: center
         color: $dark-gray-blue
-        font-size: 15px
+        font-size: 24px
+    .job
+        position: relative
+        font-size: 24px
+        align-self: center
+        color: $dark-gray-blue
+        bottom: 12.5%
 
 .user-stats
-    justify-content: space-between
+    justify-content: space-around
     width: 70%
-    padding: 15px 0 20px 0
+    padding: 0 0 50px 0
     margin-right: 10px
 
     .stats-container
+        display: flex
         text-align: center
-
         .stat-count
+            font-size: 24px
             font-weight: 700
             margin-bottom: 3px
 
         .stat-title
-            font-size: 10px
+            font-size: 20px
             color: $dark-gray-blue
             letter-spacing: 2px
