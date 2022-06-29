@@ -5,7 +5,6 @@ import { setVote, sortVote } from "../../stores/userSlice.js";
 
 const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID }) => {
 
-
     const giveVote = (userID) => {
         store.dispatch(setVote(userID));
         store.dispatch(sortVote());
