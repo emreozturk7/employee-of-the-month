@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
+
+$dark-cyan: hsl(185, 75%, 39%)
+$dark-desat-blue: hsl(229, 23%, 23%)
+$dark-gray-blue: hsl(227, 10%, 46%)
+$dark-gray: hsl(0, 0%, 59%)
+$font-size: 18px
+$font-family: 'Kumbh Sans', sans-serif
+
+.flex-row
+    display: flex
+    flex-direction: row
+
+.flex-column
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+.detail-container
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    right: 0
+    left: 0
+    top: 15%
+    bottom: 15%
+    animation: grow 1s ease-out
+
+.card-container
+    width: 75%
+    height: 100%
+    justify-content: center
+    align-items: center
+    background-color: white
+    border-radius: 15px
+    box-shadow: 0px 5px 30px -1px rgba(0, 0, 0, 0.4)
+
+    .card-pattern
+        border-radius: 15px 15px 0 0
+
+    @media screen and (max-width: 375px)
+        margin: 30px
+
+.user-info
+    .user-photo
+        position: relative
+        bottom: 40px
+        width: 100%
+        height: 100%
+        align-self: center
+        border: 5px solid white
+        border-radius: 50%
+        transition: border 0.3s ease-out
+        cursor: pointer
+
+        &:hover
+            border: 5px solid $dark-cyan
+
+    .name-age
+        position: relative
+        bottom: 20px
+        justify-content: space-between
+        align-items: center
+        width: 135px
+
+        .name
+            font-weight: 700
+
+        .age
+            color: $dark-gray-blue
+
+    .location
+        position: relative
+        bottom: 15px
+        align-self: center
+        color: $dark-gray-blue
+        font-size: 15px
+
+.user-stats
+    justify-content: space-between
+    width: 70%
+    padding: 15px 0 20px 0
+    margin-right: 10px
+
+    .stats-container
+        text-align: center
+
+        .stat-count
+            font-weight: 700
+            margin-bottom: 3px
+
+        .stat-title
+            font-size: 10px
+            color: $dark-gray-blue
+            letter-spacing: 2px

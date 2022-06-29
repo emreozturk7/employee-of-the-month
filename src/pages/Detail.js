@@ -1,8 +1,11 @@
 import React from 'react'
+import DetailCard from '../components/DetailCard/DetailCard';
 
 function Detail() {
     return (
-        <div>Detail</div>
+        <div>
+            <DetailCard />
+        </div>
     )
 }
 export default Detail;

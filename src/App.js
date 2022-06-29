@@ -1,7 +1,7 @@
-import Home from "./pages/Home";
 import { useEffect } from "react";
 import getAllUsers from "./services/userService";
 import "./App.css";
+import Routers from "./router/Routers";
 
 function App() {
   useEffect(() => {
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Home />
+      <Routers />
     </>
   );
 }

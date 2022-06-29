@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/UserCard.sass';
 import store from '../../stores/index.js';
 import { setVote, sortVote } from "../../stores/userSlice.js";
+import { Link } from 'react-router-dom';
 
 const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID }) => {
 
@@ -26,7 +27,7 @@ const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID }) => {
                         <p className='vote'>{voteNumber}</p>
                     </div>
                     <div className='button-container'>
-                        <button className='btn-style'>View Detail</button>
+                        <Link to="/detail" className='btn-style'>View Detail</Link>
                         <button className='btn-style' onClick={() => giveVote(userID)}>Vote</button>
                     </div>
                 </div>
