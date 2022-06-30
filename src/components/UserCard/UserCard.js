@@ -17,19 +17,23 @@ const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID }) => {
                 <div className='row-container'>
                     <img src={photoUrl} alt="Profile" className='image-style' />
 
-                    <div className='photo-container'>
+                    <div className='info-vote-container'>
+                        <div className='info-container'>
+                            <p className='title'>{name} {surname}</p>
+                            <p className='subtitle'>{job}</p>
+                        </div>
+
+                        <div className='vote-container'>
+                            <p className='vote'>{voteNumber}</p>
+                        </div>
                     </div>
-                    <div className='info-container'>
-                        <p className='title'>{name} {surname}</p>
-                        <p className='subtitle'>{job}</p>
-                    </div>
-                    <div className='vote-container'>
-                        <p className='vote'>{voteNumber}</p>
-                    </div>
+
+
                     <div className='button-container'>
                         <Link to="/detail" className='btn-style'>View Detail</Link>
                         <button className='btn-style' onClick={() => giveVote(userID)}>Vote</button>
                     </div>
+
                 </div>
             </div>
         </div>
