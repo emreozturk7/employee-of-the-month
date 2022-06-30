@@ -1,12 +1,14 @@
 import React from 'react'
 import DetailCard from '../components/DetailCard/DetailCard';
 import { useSelector } from 'react-redux';
+import Header from '../components/Header/Header';
 
 function Detail() {
     const { users, detailUserID } = useSelector(state => state.userSlice);
 
     return (
         <div>
+            <Header />
             {
                 users.users.map((user) => (
                     user.id === detailUserID &&

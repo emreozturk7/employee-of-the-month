@@ -3,8 +3,7 @@ import UserCard from "../components/UserCard/UserCard.js";
 import { useAutoAnimate } from '@formkit/auto-animate/react';
 import loading from '../lottie/loading.json';
 import Lottie from 'react-lottie';
-
-
+import Header from "../components/Header/Header.js";
 
 function Home() {
     const { users, error, isLoaded, votes } = useSelector(state => state.userSlice);
@@ -21,6 +20,7 @@ function Home() {
 
     return (
         <div>
+            <Header />
             {
                 error
                     ? <div>Error: {error.message}</div>
