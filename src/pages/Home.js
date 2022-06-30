@@ -32,7 +32,7 @@ function Home() {
                         />
                         : <ul ref={animationParent}>
                             {
-                                votes.map((vote) => (
+                                votes.map((vote, index) => (
                                     users.users.map((user) => (user.id === vote.userID &&
                                         <UserCard
                                             key={user.id}
@@ -42,6 +42,7 @@ function Home() {
                                             photoUrl={user.image}
                                             voteNumber={vote.vote}
                                             userID={vote.userID}
+                                            arrangement={index + 1}
                                         />
                                     ))
                                 ))
