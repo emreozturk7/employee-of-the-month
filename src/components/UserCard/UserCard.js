@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/UserCard.sass';
 import store from '../../stores/index.js';
-import { setVote, sortVote } from "../../stores/userSlice.js";
+import { setVote, sortVote, setDetailUserID } from "../../stores/userSlice.js";
 import { Link } from 'react-router-dom';
 
 const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID }) => {
@@ -9,6 +9,10 @@ const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID }) => {
     const giveVote = (userID) => {
         store.dispatch(setVote(userID));
         store.dispatch(sortVote());
+    }
+
+    const detailUserID = (userID) => {
+        store.dispatch(setDetailUserID(userID));
     }
 
     return (
@@ -28,12 +32,10 @@ const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID }) => {
                         </div>
                     </div>
 
-
                     <div className='button-container'>
-                        <Link to="/detail" className='btn-style'>View Detail</Link>
+                        <Link to="/detail" className='btn-style' onClick={() => detailUserID(userID)}>View Detail</Link>
                         <button className='btn-style' onClick={() => giveVote(userID)}>Vote</button>
                     </div>
-
                 </div>
             </div>
         </div>

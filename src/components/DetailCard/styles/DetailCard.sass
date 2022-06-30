@@ -4,7 +4,6 @@ $dark-cyan: hsl(185, 75%, 39%)
 $dark-desat-blue: hsl(229, 23%, 23%)
 $dark-gray-blue: hsl(227, 10%, 46%)
 $dark-gray: hsl(0, 0%, 59%)
-$font-size: 18px
 $primaryColor: rgb(97 193 92)
 $backgroundColor: rgb(240,242,246,255)
 
@@ -55,48 +54,56 @@ $backgroundColor: rgb(240,242,246,255)
         cursor: pointer
         background-color: $backgroundColor
 
-    .name-age
+    .name-age-container
         position: relative
         justify-content: center
         align-items: center
         bottom: 7.5%
 
         .name
-            font-size: 36px
+            font-size: 1.5rem
             margin-right: 5%
             font-weight: 700
 
         .age
-            font-size: 36px
+            font-size: 1.5rem
             color: $dark-gray-blue
 
     .location
         position: relative
         align-self: center
         color: $dark-gray-blue
-        font-size: 24px
+        font-size: 1rem
         top: 7.5%
     .job
         position: relative
-        font-size: 24px
+        font-size: 1rem
         align-self: center
         color: $dark-gray-blue
 
-.user-stats
-    justify-content: space-between
-    width: 80%
+.user-detail-container
+    justify-content: space-around
+    width: 100%
     padding: 0 0 50px 0
-    margin-right: 10px
+    background-color: $primaryColor
+    border-radius: 15px
 
-    .stats-container
+    .solid
+        border-top: 3px solid white
+
+    .detail-container-info
+        margin-top: 2rem
         display: flex
         text-align: center
-        .stat-count
-            font-size: 24px
+
+        .detail-title
+            color: white
+            font-size: 1rem
             font-weight: 700
             margin-bottom: 3px
 
-        .stat-title
-            font-size: 20px
-            color: $dark-gray-blue
+        .detail-paragraph
+            margin-top: 0.5rem
+            color: white
+            font-size: 1rem
             letter-spacing: 2px
