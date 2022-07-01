@@ -10,8 +10,8 @@ $primaryColor: rgb(97 193 92)
             opacity: 25%
 
     .enuygun-container
+        height: 1080px
         position: relative
-        height: 67.5rem
         display: flex
         justify-content: space-evenly
         align-items: center
@@ -40,17 +40,6 @@ $primaryColor: rgb(97 193 92)
             font-weight: 900
             cursor: pointer
 
-@media screen and (max-width: 768px)
+@media only screen and (max-width: 1440px)
     .enuygun-container
-        position: relative
-        height: 50rem
-        .logo-abstract-container
-            .enuygun-logo
-                width: 100%
-            .abstract
-                font-size: 16px
-            .intro-button
-                width: 100%
-                font-size: large
-                font-weight: 900
-                cursor: pointer
+        max-height: 52rem

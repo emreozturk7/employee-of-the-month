@@ -34,32 +34,33 @@ $backgroundColor: rgb(240,242,246,255)
     background-color: white
     border-radius: 15px
     box-shadow: 0px 5px 20px -1px rgba(0, 0, 0, 0.4)
+    &:hover
+        box-shadow: 0 0 15px gray
 
     .card-pattern
         border-radius: 15px 15px 0 0
 
-    @media screen and (max-width: 375px)
-        margin: 30px
-
 .user-info
     .user-photo
-        bottom: 75px
         position: relative
         width: 90%
-        height: 90%
         align-self: center
         border: 5px solid white
-        border-radius: 50%
+        border-radius: 10%
         transition: border 0.3s ease-out
-        cursor: pointer
         background-color: $backgroundColor
+        margin-top: 2%
+        &:hover
+            box-shadow: 0 0 5px gray
+    @media only screen and (max-width: 1440px)
+        .user-photo
+            width: 60%
 
     .name-age-container
+        margin-top: 15%
         position: relative
         justify-content: center
         align-items: center
-        bottom: 7.5%
-
         .name
             font-size: 1.5rem
             margin-right: 5%
@@ -69,26 +70,44 @@ $backgroundColor: rgb(240,242,246,255)
             font-size: 1.5rem
             color: $dark-gray-blue
 
+    @media only screen and (max-width: 1440px)
+    .name-age-container
+        margin-top: 7.5%
+
+        @media only screen and (max-width: 1440px)
+            .name-age-container
+                margin-top: 7.5%
+            .name
+                font-size: 1.25rem
+            .age
+                font-size: 1.25rem
+
     .location
         position: relative
         align-self: center
         color: $dark-gray-blue
-        font-size: 1rem
-        top: 7.5%
+        font-size: 1.25rem
+        margin-top: 10%
+
     .job
         position: relative
-        font-size: 1rem
+        font-size: 1.25rem
         align-self: center
         color: $dark-gray-blue
+        margin-top: 10%
+    @media only screen and (max-width: 1440px)
+        .job
+            font-size: 1rem
+        .location
+            font-size: 1rem
 
 .user-detail-container
     justify-content: space-around
     width: 100%
-    padding: 0 0 50px 0
+    padding: 0 0 40px 0
     background-color: $primaryColor
     border-radius: 15px
     opacity: 75%
-
     .detail-container-info
         position: relative
         display: flex
@@ -101,7 +120,7 @@ $backgroundColor: rgb(240,242,246,255)
         .detail-title
             position: relative
             color: white
-            font-size: 1rem
+            font-size: 1.25rem
             font-weight: 700
             margin-bottom: 3px
 
@@ -109,11 +128,11 @@ $backgroundColor: rgb(240,242,246,255)
             position: relative
             margin-top: 0.5rem
             color: white
-            font-size: 1rem
+            font-size: 1.25rem
             letter-spacing: 2px
 
-@media (min-width: 1440) and (max-width: 1920)
-    .detail-paragraph
-        font-size: 2rem
-    .detail-title
-        font-size: 2rem
+        @media only screen and (max-width: 1440px)
+            .detail-paragraph
+                font-size: 0.75rem
+            .detail-title
+                font-size: 0.75rem

@@ -14,9 +14,9 @@ function IntroductionView() {
             <div className='enuygun-container'>
                 <div className='logo-abstract-container'>
                     <img src={WingieEnuygunLogo} alt="" className='enuygun-logo' />
-                    <p className='abstract'>Ayın elamanını seçmek işte bu kadar kolay!</p>
+                    <p className='abstract'>It's that easy to choose the employee of the month!</p>
                 </div>
-                <Link to="/home" className='intro-button'>Oylamaya başla!</Link>
+                <Link to="/home" className='intro-button'>Start Voting</Link>
             </div>
         </div>
     )
