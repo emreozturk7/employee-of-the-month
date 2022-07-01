@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Coderspace & Wingie Enuygun React Bootcamp Bitirme Projesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Özet:
+React.js kullanılarak bir ayın elemanını seçme uygulaması, Uygulamada ana sayfada listelenen kullanıcılara oy verilebiliyor ve detay bilgisi öğrenilebiliyor. Oy verildiği zaman anlık olarak oylar en yüksek oydan başlayarak aşşağı doğru sıralanıyor.
 
-## Available Scripts
+## [Projeyi canlı denemek için tıklayınız](https://secondhand-project-hiyd21upp-emreozturk7.vercel.app/)
 
-In the project directory, you can run:
+## Kullanılan Kütüphaneler:
+- react-router-dom - ^6.3.0
+- reduxjs/toolkit - ^1.8.2
+- react-redux: ^8.0.2
+- react-lottie: ^1.2.3
+- formkit/auto-animate - ^1.0.0-beta.1
 
-### `npm start`
+## Uygulama içi ekran görüntüleri
+![Screen Shot 2022-07-01 at 8 06 20 PM](https://user-images.githubusercontent.com/45331482/176941474-038547cf-d37c-42a7-b5c1-8adb8aa39bb6.png)
+![Screen Shot 2022-07-01 at 8 06 39 PM](https://user-images.githubusercontent.com/45331482/176941491-af3e43a6-9884-46f3-80de-627d2e61d63b.png)
+![Screen Shot 2022-07-01 at 8 06 48 PM](https://user-images.githubusercontent.com/45331482/176941490-bec70315-61c0-45be-b4e5-dc76c9fde294.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## GIF Görünümü
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![enuygun](https://user-images.githubusercontent.com/45331482/176941647-eea2acc5-5248-4d2f-a28a-20ab85dbb167.gif)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Kurulum:
+### 1- `Proje bilgisayarınıza klonlanır`
+### 2- `Terminal içerisinde proje dizinine gidilir`
+### 3- `Sırası ile aşağıdaki 2 komut çalıştırılır`
+### 4- `npm install`
+### 5- `npm start`
