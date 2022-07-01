@@ -4,7 +4,7 @@ import store from '../../stores/index.js';
 import { setVote, sortVote, setDetailUserID } from "../../stores/userSlice.js";
 import { Link } from 'react-router-dom';
 
-const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID,arrangement }) => {
+const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID, arrangement }) => {
 
     const giveVote = (userID) => {
         store.dispatch(setVote(userID));
@@ -19,7 +19,9 @@ const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID,arrangement
         <div className='main-container'>
             <div className='container'>
                 <div className='row-container'>
-                    <div className='arrangement'>#{ arrangement}</div>
+                    <div className='box'>
+                        <div className='arrangement'>#{arrangement}</div>
+                    </div>
                     <div className='line' />
                     <img src={photoUrl} alt="Profile" className='image-style' />
 

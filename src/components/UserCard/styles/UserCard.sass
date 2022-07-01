@@ -9,7 +9,7 @@ $cardColor: rgb(254,254, 255, 255)
 
     .container
         height: 5%
-        width: 55%
+        width: 56%
         position: relative
         background-color: $cardColor
         overflow: hidden
@@ -17,8 +17,6 @@ $cardColor: rgb(254,254, 255, 255)
         border-radius: 10px
         margin-top: 2rem
         text-align: center
-        padding: 1rem
-
         &:hover
             box-shadow: 0 0 15px gray
 
@@ -26,21 +24,20 @@ $cardColor: rgb(254,254, 255, 255)
             display: flex
             flex-direction: row
             justify-content: space-between
-
-            .arrangement
-                color: $primaryColor
-                font-size: 20px
-            .line
-                width: 15%
-                transform: rotate(-45deg)
-                transform-origin: bottom left
-                border-top: 1px $primaryColor solid
-                position: absolute
-                bottom: 3rem
-                left: -1px
-                box-sizing: border-box
+            .box
+                background-color: $primaryColor
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 7.5%
+                border-radius: 10px
+                opacity: 75%
+                .arrangement
+                    color: white
+                    font-size: 1.5rem
 
             .image-style
+                padding: 1rem
                 display: flex
                 justify-content: flex-start
                 margin: 1rem
@@ -50,12 +47,12 @@ $cardColor: rgb(254,254, 255, 255)
                 border-radius: 50%
 
             .info-vote-container
+                padding: 1rem
                 display: flex
                 flex-direction: row
                 justify-content: space-between
                 width: 40%
                 .info-container
-                    left: 5%
                     display: flex
                     flex-direction: column
                     justify-content: space-evenly
@@ -65,44 +62,44 @@ $cardColor: rgb(254,254, 255, 255)
                         align-items: flex-start
                         color: $primaryColor
                         font-weight: 500
-                        font-size: 24px
+                        font-size: 1.25rem
                     .subtitle
                         display: flex
                         align-items: flex-start
                         color: gray
                         font-weight: 300
-                        font-size: 16px
+                        font-size: 1rem
 
                 .vote-container
+                    padding: 1rem
                     display: flex
                     justify-content: center
                     align-items: center
                     .vote
                         color: gray
                         font-weight: 500
-                        font-size: 60px
+                        font-size: 2.5rem
 
             .button-container
+                padding: 1rem
                 display: flex
                 flex-direction: column
-                justify-content: space-around
+                justify-content: space-between
 
                 .btn-style
-                    background-color: $primaryColor
-                    border-radius: 5px
-                    color: #FFFFFF
-                    width: 200px
-                    cursor: pointer
-                    line-height: 30px
-                    outline: 0
-                    overflow: hidden
-                    pointer-events: auto
-                    text-align: center
-                    user-select: none
-                    -webkit-user-select: none
-                    vertical-align: top
-                    white-space: nowrap
+                    opacity: 75%
+                    display: flex
+                    justify-content: center
+                    align-items: center
                     text-decoration: none
-                    border: 0
+                    color: white
+                    background-color: $primaryColor
+                    border-radius: 10px
+                    height: 2.5rem
+                    margin-bottom: 10px
+                    width: 12rem
+                    font-size: medium
+                    font-weight: 900
+                    cursor: pointer
                     &:hover
                         box-shadow: 0 0 10px gray

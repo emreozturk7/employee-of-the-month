@@ -6,7 +6,7 @@ $primaryColor: rgb(97 193 92)
         position: absolute
         .intro-background
             width: 100%
-            height: 67.5rem
+            height: 100%
             opacity: 25%
 
     .enuygun-container
@@ -16,17 +16,41 @@ $primaryColor: rgb(97 193 92)
         justify-content: space-evenly
         align-items: center
         flex-direction: column
-        .enuygun-logo
-            width: 15%
+        .logo-abstract-container
+            display: flex
+            flex-direction: column
+            align-items: center
+            .enuygun-logo
+                margin-top: 5rem
+                width: 50%
+            .abstract
+                font-size: 20px
+                color: white
         .intro-button
             display: flex
             justify-content: center
             align-items: center
             text-decoration: none
-            color: black
+            color: $primaryColor
             background-color: white
-            border-radius: 50px
+            border-radius: 10px
             height: 4rem
             width: 14rem
             font-size: large
             font-weight: 900
+            cursor: pointer
+
+@media screen and (max-width: 768px)
+    .enuygun-container
+        position: relative
+        height: 50rem
+        .logo-abstract-container
+            .enuygun-logo
+                width: 100%
+            .abstract
+                font-size: 16px
+            .intro-button
+                width: 100%
+                font-size: large
+                font-weight: 900
+                cursor: pointer

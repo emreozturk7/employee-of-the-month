@@ -89,22 +89,31 @@ $backgroundColor: rgb(240,242,246,255)
     border-radius: 15px
     opacity: 75%
 
-    .solid
-        border-top: 3px solid white
-
     .detail-container-info
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
         margin-top: 2rem
         display: flex
         text-align: center
 
         .detail-title
+            position: relative
             color: white
             font-size: 1rem
             font-weight: 700
             margin-bottom: 3px
 
         .detail-paragraph
+            position: relative
             margin-top: 0.5rem
             color: white
             font-size: 1rem
             letter-spacing: 2px
+
+@media (min-width: 1440) and (max-width: 1920)
+    .detail-paragraph
+        font-size: 2rem
+    .detail-title
+        font-size: 2rem

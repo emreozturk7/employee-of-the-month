@@ -34,16 +34,18 @@ function Home() {
                             {
                                 votes.map((vote, index) => (
                                     users.users.map((user) => (user.id === vote.userID &&
-                                        <UserCard
-                                            key={user.id}
-                                            name={user.firstName}
-                                            surname={user.lastName}
-                                            job={user.company.name}
-                                            photoUrl={user.image}
-                                            voteNumber={vote.vote}
-                                            userID={vote.userID}
-                                            arrangement={index + 1}
-                                        />
+                                        <li key={user.id}>
+                                            <UserCard
+                                                key={user.id}
+                                                name={user.firstName}
+                                                surname={user.lastName}
+                                                job={user.company.name}
+                                                photoUrl={user.image}
+                                                voteNumber={vote.vote}
+                                                userID={vote.userID}
+                                                arrangement={index + 1}
+                                            />
+                                        </li>
                                     ))
                                 ))
                             }

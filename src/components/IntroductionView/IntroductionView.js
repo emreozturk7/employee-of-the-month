@@ -12,7 +12,10 @@ function IntroductionView() {
                 <img src={IntroductionBackground} alt="" className='intro-background' />
             </div>
             <div className='enuygun-container'>
-                <img src={WingieEnuygunLogo} alt="" className='enuygun-logo' />
+                <div className='logo-abstract-container'>
+                    <img src={WingieEnuygunLogo} alt="" className='enuygun-logo' />
+                    <p className='abstract'>Ayın elamanını seçmek işte bu kadar kolay!</p>
+                </div>
                 <Link to="/home" className='intro-button'>Oylamaya başla!</Link>
             </div>
         </div>

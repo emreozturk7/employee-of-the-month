@@ -1,17 +1,7 @@
 import React from 'react'
 import './styles/DetailCard.sass';
 
-function DetailCard({
-    photoURL,
-    age,
-    city,
-    name,
-    surname,
-    email,
-    address,
-    phone,
-    job
-}) {
+function DetailCard({ photoURL, age, city, name, surname, email, address, phone, job }) {
     return (
         <div>
             <div className="detail-container">

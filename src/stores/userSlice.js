@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     theme: 'light',
     votes: {},
-    users: {},
+    users: null,
     detailUserID: 0,
     error: null,
     isLoaded: false,
@@ -37,7 +37,8 @@ const userSlice = createSlice({
             state.votes.sort((a, b) => b.vote - a.vote);
         },
         setDetailUserID: (state, action) => {
-            state.detailUserID = action.payload
+            state.detailUserID = action.payload;
+            localStorage.setItem("detailUserID", JSON.stringify(action.payload));
         }
     }
 });
