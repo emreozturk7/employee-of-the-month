@@ -10,7 +10,7 @@
 ## Özet:
 React.js kullanılarak bir ayın elemanını seçme uygulaması, Uygulamada ana sayfada listelenen kullanıcılara oy verilebiliyor ve detay bilgisi öğrenilebiliyor. Oy verildiği zaman anlık olarak oylar en yüksek oydan başlayarak aşşağı doğru sıralanıyor.
 
-## [Projeyi canlı denemek için tıklayınız](https://secondhand-project-hiyd21upp-emreozturk7.vercel.app/)
+## [Projeyi canlı denemek için tıklayınız](https://employee-of-the-month-seven.vercel.app/)
 
 ## Kullanılan Kütüphaneler:
 - react-router-dom - ^6.3.0
