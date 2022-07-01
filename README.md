@@ -1,5 +1,12 @@
 # Coderspace & Wingie Enuygun React Bootcamp Bitirme Projesi
 
+<div align="center">
+  <p>
+    <img src="https://user-images.githubusercontent.com/45331482/176944304-2c74ddd2-b437-4ae7-947c-1f1f489fc5e2.jpeg" alt="" />
+    <img src="https://user-images.githubusercontent.com/45331482/176944199-e80e76c5-f132-4195-b4db-33350b713f44.png" alt="" />
+  </p>
+</div>
+
 ## Özet:
 React.js kullanılarak bir ayın elemanını seçme uygulaması, Uygulamada ana sayfada listelenen kullanıcılara oy verilebiliyor ve detay bilgisi öğrenilebiliyor. Oy verildiği zaman anlık olarak oylar en yüksek oydan başlayarak aşşağı doğru sıralanıyor.
 
