@@ -31,6 +31,7 @@ function Home() {
                             width={400}
                         />
                         : <ul ref={animationParent}>
+                            {console.log("Kullanıcı oy verme sayfasına geldi.")}
                             {
                                 votes.map((vote, index) => (
                                     users.users.map((user) => (user.id === vote.userID &&

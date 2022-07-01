@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
-
 $dark-cyan: hsl(185, 75%, 39%)
 $dark-desat-blue: hsl(229, 23%, 23%)
 $dark-gray-blue: hsl(227, 10%, 46%)
@@ -25,6 +23,21 @@ $backgroundColor: rgb(240,242,246,255)
     top: 20%
     bottom: 15%
     animation: grow 1s ease-out
+
+    .back-button
+        position: absolute
+        margin-bottom: 29%
+        margin-right: 50%
+        background-color: white
+        cursor: pointer
+        .back-button-image
+            width: 2rem
+            height: 2rem
+            background-color: white
+    @media only screen and (max-width: 1440px)
+        .back-button
+            margin-bottom: 32.5%
+            margin-right: 50%
 
 .card-container
     width: 56%
@@ -133,6 +146,6 @@ $backgroundColor: rgb(240,242,246,255)
 
         @media only screen and (max-width: 1440px)
             .detail-paragraph
-                font-size: 0.75rem
+                font-size: 0.85rem
             .detail-title
-                font-size: 0.75rem
+                font-size: 0.85rem

@@ -7,11 +7,13 @@ import { Link } from 'react-router-dom';
 const UserCard = ({ voteNumber, name, surname, job, photoUrl, userID, arrangement }) => {
 
     const giveVote = (userID) => {
+        console.log(`Kullanıcı ${userID} id numarasına sahip çalışana 1 oy verdi.`);
         store.dispatch(setVote(userID));
         store.dispatch(sortVote());
     }
 
     const detailUserID = (userID) => {
+        console.log(`Kullanıcı ${userID} id numarasına sahip çalışanın detay sayfasına girdi.`);
         store.dispatch(setDetailUserID(userID));
     }
 
