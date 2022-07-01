@@ -4,7 +4,6 @@ const initialState = {
     theme: 'light',
     votes: {},
     users: null,
-    detailUserID: 0,
     error: null,
     isLoaded: false,
 }
@@ -36,12 +35,8 @@ const userSlice = createSlice({
         sortVote: (state) => {
             state.votes.sort((a, b) => b.vote - a.vote);
         },
-        setDetailUserID: (state, action) => {
-            state.detailUserID = action.payload;
-            localStorage.setItem("detailUserID", JSON.stringify(action.payload));
-        }
     }
 });
 
-export const { setVotes, setTheme, setUsers, setError, setIsLoaded, setVote, sortVote, setDetailUserID } = userSlice.actions;
+export const { setVotes, setTheme, setUsers, setError, setIsLoaded, setVote, sortVote } = userSlice.actions;
 export default userSlice.reducer;
